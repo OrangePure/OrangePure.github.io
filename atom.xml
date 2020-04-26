@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://orangepure.github.io</id>
+    <title>一只大橘</title>
+    <updated>2020-04-26T07:19:49.322Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://orangepure.github.io"/>
+    <link rel="self" href="https://orangepure.github.io/atom.xml"/>
+    <subtitle>这是一只老菜猫了</subtitle>
+    <logo>https://orangepure.github.io/images/avatar.png</logo>
+    <icon>https://orangepure.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 一只大橘</rights>
+    <entry>
+        <title type="html"><![CDATA[人生第一个blog（4.26更新）]]></title>
+        <id>https://orangepure.github.io/post/my/</id>
+        <link href="https://orangepure.github.io/post/my/">
+        </link>
+        <updated>2020-04-25T10:43:13.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="时间424">时间：4.24</h2>
+<p>这天<s>突发奇想</s>，想做一个自己的blog<br>
+<s>其实这个仓库我早建了，肥来补坑</s></p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="时间424">时间：4.24</h2>
+<p>这天<s>突发奇想</s>，想做一个自己的blog<br>
+<s>其实这个仓库我早建了，肥来补坑</s></p>
+<!-- more -->
+<p>大概是想把接下来的课设什么的偶尔记录一下？尝试了Github Desktop+模板来弄博客，但是感觉效率太低了<s>不会html</s>，又摸索发现了Gridea这个宝藏软件（还有hexo）👏<br>
+结果以为CNAME可以自己编，把网站弄崩了😂</p>
+<h2 id="时间425">时间：4.25</h2>
+<p>将新的主题上传了，估计还会再换主题的。目前尚未完成的：<br>
+①Markdown语法的使用<br>
+②评论区<br>
+③流量统计<br>
+④接入百度搜索（？）<s>接不接都没人看，算了</s><br>
+⑤等等等</p>
+<h2 id="时间426">时间：4.26</h2>
+<p>昨晚买了个域名（仅仅1rmb/年），感觉更像一个blog了呢<br>
+在百度站长那发现移动端可以爬到这个站，PC端好像不行，估计只能移到coding上才行....<br>
+Gridea的自定义还是太难了，要自己添加css，js什么的才行....blog能用就行，不整那么多花里胡哨的了。<br>
+*<s>但由于某ling想给我赞赏</s>（或许再研究研究？必做一个打赏功能出来！</p>
+<h2 id="qq">Q&amp;Q</h2>
+<p>①4.25，https下的网站发现排版错误，解决：CNAME中加上前缀+清Chrome的缓存（好像就可以了）<br>
+②4.25，发现每次同步，会把之前本地删/改的文件原封不动又传上去了，亟待解决<br>
+②4.26，通过作者的issue，得到了删除output文件夹的解决方法，就不会将删除的文章再传上去（<s>奇怪，明明output里面相关的文件都没了啊</s> 原来在.git文件夹里面）<br>
+③</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea（这是例文）]]></title>
+        <id>https://orangepure.github.io/post/hello-gridea/</id>
+        <link href="https://orangepure.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
