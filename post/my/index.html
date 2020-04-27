@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="description" content="时间：4.24
 这天突发奇想，想做一个自己的blog
 其实这个仓库我早建了，肥来补坑
@@ -157,9 +157,13 @@ Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....b
 <div id="vcomments"></div>
     <script>
         new Valine({
-            el: '#vcomments',
-            appId: '<qoIPte7sQUYWeqec09Qd6s7S-gzGzoHsz>',
-            appKey: '<urlYnWwRfP7hLt2YHaln53eO>'
+            el: '#vcomments' ,
+    appId: '<qoIPte7sQUYWeqec09Qd6s7S-gzGzoHsz>',
+    appKey: '<urlYnWwRfP7hLt2YHaln53eO>',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go'
         })
     </script>
         

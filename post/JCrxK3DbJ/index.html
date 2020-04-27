@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="description" content="汽车想获得最大的引擎力，是放在高档位还是低档位有利？
   ——— 汽车动力的简单分析
 作者：五舍B657
@@ -174,9 +174,13 @@
 <div id="vcomments"></div>
     <script>
         new Valine({
-            el: '#vcomments',
-            appId: '<qoIPte7sQUYWeqec09Qd6s7S-gzGzoHsz>',
-            appKey: '<urlYnWwRfP7hLt2YHaln53eO>'
+            el: '#vcomments' ,
+    appId: '<qoIPte7sQUYWeqec09Qd6s7S-gzGzoHsz>',
+    appKey: '<urlYnWwRfP7hLt2YHaln53eO>',
+    notify:false, 
+    verify:false, 
+    avatar:'mp', 
+    placeholder: 'just go go'
         })
     </script>
         
