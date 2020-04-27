@@ -3,14 +3,14 @@
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>blog | 一只大橘</title>
-<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1587961511874">
+<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1587973002347">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://orangepure.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="blog | 一只大橘 - Atom Feed" href="https://orangepure.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <meta name="description" content="这是一只老菜猫了" />
   </head>
   <body>
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://orangepure.github.io">
-  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1587961511874" alt="">
+  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1587973002347" alt="">
   </a>
   <h1 class="site-title">
     一只大橘
@@ -47,7 +47,7 @@
       
     
       
-        <a href="/post/about" class="menu">
+        <a href="https://orangepure.github.io/post/about" class="menu">
           关于
         </a>
       
@@ -73,7 +73,6 @@
     
   </div>
 </div>
-
         <div class="current-tag-container">
             <h2 class="title">
                 标签：# blog
@@ -108,7 +107,15 @@
     </article>
   
 </div>
-
+<div id="vcomments"></div>
+<script>
+  new Valine({
+  el: '#vcomments',
+  appId: '<qoIPte7sQUYWeqec09Qd6s7S-gzGzoHsz>
+    ',
+    appKey: '<urlYnWwRfP7hLt2YHaln53eO>'
+        })
+    </script>
         <div class="pagination-container">
   
   
