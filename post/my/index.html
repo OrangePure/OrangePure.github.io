@@ -18,7 +18,6 @@
     <meta name="keywords" content="blog" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-	 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   </head>
   <body>
     <div class="main">
@@ -145,14 +144,8 @@ Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....b
             </div>
           </article>
         </div>
-		<div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: '<M4UXYMglhrhLk073H05Qn0ui-gzGzoHsz>',
-            appKey: '<qYP3Miwe6QIUclPypMGqtWpA>'
-        })
-    </script>
+
+
         
           <div class="next-post">
             <div class="next">下一篇</div>
@@ -162,11 +155,19 @@ Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....b
               </h3>
             </a>
           </div>
+		<div id="vcomments"></div>
+        
+
 
         
 
-        
-
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '<M4UXYMglhrhLk073H05Qn0ui-gzGzoHsz>',
+            appKey: '<qYP3Miwe6QIUclPypMGqtWpA>'
+        })
+    </script>
         <div class="site-footer">
   Powered by&nbsp;<a href="https://github.com/getgridea/gridea"> Gridea</a>&nbsp;&nbsp; &copy; 2020 Pure Orange
   <a class="rss" href="https://orangepure.github.io/atom.xml" target="_blank">
