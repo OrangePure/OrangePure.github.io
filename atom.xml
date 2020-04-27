@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://orangepure.github.io</id>
     <title>一只大橘</title>
-    <updated>2020-04-27T01:38:53.370Z</updated>
+    <updated>2020-04-27T04:18:05.895Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://orangepure.github.io"/>
     <link rel="self" href="https://orangepure.github.io/atom.xml"/>
@@ -10,6 +10,46 @@
     <logo>https://orangepure.github.io/images/avatar.png</logo>
     <icon>https://orangepure.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 一只大橘</rights>
+    <entry>
+        <title type="html"><![CDATA[一篇物理小课题]]></title>
+        <id>https://orangepure.github.io/post/JCrxK3DbJ/</id>
+        <link href="https://orangepure.github.io/post/JCrxK3DbJ/">
+        </link>
+        <updated>2020-04-27T03:20:47.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="center汽车想获得最大的引擎力是放在高档位还是低档位有利center"><center>汽车想获得最大的引擎力，是放在高档位还是低档位有利？</center></h2>
+<h2 id="center-汽车动力的简单分析center-more-"><center>  ——— 汽车动力的简单分析</center><!-- more --></h2>
+<h4 id="p-alignright作者五舍b657p"><p align="right">作者：五舍B657</p></h4>
+<h2 id="1如何增大引擎力">1.如何增大引擎力？</h2>
+<p>我们高中学过公式：P=Fv，从这个公式来看，当P恒定时，v比较小时，F就比较大。但是，我们今天讨论的是牵引力与档位的关系。<br>
+那我们就先看看各档位之间有什么不同。档位是汽车变速箱手拉杆在不同位置时，变速箱通过不同齿轮的结合产生变速变矩。低档位往往是低速高矩，高档位往往是高速低矩。这里的“速”指的是转速n，“矩”指的是扭矩τ。其实，功率和转速、扭矩的关系可以由P=Fv来推导。</p>
+<blockquote>
+<center>∵P=F·v</br>
+∴P=F·n·2πr</br>
+∴P=2π·τ·n</center></br>
+</blockquote>
+<p>由上式我们可知，在P恒定的情况下，转速n越小，力矩τ越大,同时扭力即引擎力越大。</p>
+<h2 id="2汽车降速增扭的具体实现">2.汽车降速增扭的具体实现</h2>
+<p>我们知道，汽车的内部结构精密。最初的传动力从引擎内气缸的曲轴开始传起，通过变速器到车轴，实现了提供牵引力的过程。我们不妨简化一下这个结构，把其中的一部分看成两个齿轮（如下图）。<br>
+<img src="https://orangepure.github.io/post-images/1587958539312.png" alt="" width="500" height="300" loading="lazy"><br>
+主动轮和从动轮上的力是相同的，所以当从动轮的直径比主动轮大时，从动轮的角速度变小，而力矩由于力的大小不变而半径变大，使得从动轮的力矩变大。这就是汽车变速器低档位时，降速增扭的具体实现。</p>
+<h2 id="3汽车牵引力和扭矩之间的关系">3.汽车牵引力和扭矩之间的关系</h2>
+<p>另外，汽车有传动比和齿数比两个概念，分别成反比。传动比用i来表示。有</p>
+<blockquote>
+<figure data-type="image" tabindex="1"><img src="https://orangepure.github.io/post-images/1587958696524.JPG" alt="" width="200" height="45" loading="lazy"></figure>
+</blockquote>
+<p>n为转速而z为齿轮齿数，在不计损耗的情况下，可以得到有</p>
+<blockquote>
+<figure data-type="image" tabindex="2"><img src="https://orangepure.github.io/post-images/1587958803307.JPG" alt="" width="180" height="60" loading="lazy"></figure>
+</blockquote>
+<h2 id="4扭矩-扭力-马力之间的不同">4.扭矩、扭力、马力之间的不同</h2>
+<p>其实，大家这些年说的扭矩和扭力是同一个玩意。扭力其实只是比较形象的俗称。而马力呢，则是汽车功率的计量单位，“马力(hp)”这个单位才是詹姆斯·瓦特提出，而单位“瓦特”则是由科学促进会纪念瓦特而命名的。一公制马力为735瓦特，即75千克力·米。</p>
+<h2 id="5拓展马力最大的民用车">5.拓展：马力最大的民用车</h2>
+<p><img src="https://orangepure.github.io/post-images/1587959930751.png" alt="" loading="lazy"><br>
+世界上马力 <s>可能</s> 最大的 <s>电动</s> 车：Rimac C_Two。达到了惊人的1914hp！！ 0~100km/h仅仅需要1.85s。<s>要知道一般家用车的马力都处于200左右,很多不会超过200hp</s> 其动力之澎湃可想而知。<br>
+<em>这是很久之前写的一小时速成文（雾</em><br>
+<font color=#808080><em>注：图片均来源于网络,如有版权问题请联系删除</em></font></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[人生第一个blog（4.26更新）]]></title>
         <id>https://orangepure.github.io/post/my/</id>
