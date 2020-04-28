@@ -844,6 +844,9 @@ td {
     display: none;
   }
 }
+#music {
+  display: none;
+}
 .archives-container {
   padding: 32px;
   flex: 1;
