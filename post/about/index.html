@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>关于 | 一只大橘</title>
-<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1588034496891">
+<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1588044550703">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://orangepure.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="关于 | 一只大橘 - Atom Feed" href="https://orangepure.github.io/atom.xml">
@@ -32,7 +32,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://orangepure.github.io">
-  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1588034496891" alt="">
+  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1588044550703" alt="">
   </a>
   <h1 class="site-title">
     一只大橘
@@ -108,6 +108,7 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
+			<center>  <div id="musicBox"></div></center>
                 <blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 </blockquote>
@@ -121,6 +122,25 @@
 <p>1192557408@qq.com</p>
 
               </div>
+
+			  <script>
+			  var music = document.getElementById('music')
+if(music != null){//存在
+    var id = music.innerHTML;
+    var code = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=440 height=86 src="//music.163.com/outchain/player?type=2&id='+id +'&auto=1&height=66"></iframe>'
+    console.log('id:' +id);
+    var frame = document.createElement("frame")
+    frame.src='//music.163.com/outchain/player?type=2&id='+id;
+    frame.frameBorder=0;
+    frame.marginHeight=0;
+    frame.marginWidth=0;
+    frame.clientWidth=440;
+    frame.clientHeight=86;          
+    frame.id='Music'
+    var box = document.getElementById('musicBox');
+    musicBox.innerHTML = code;
+}</script>
+
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
@@ -206,6 +226,6 @@
       });
 
     </script>
-
+	
   </body>
 </html>

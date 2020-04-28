@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>人生第一个blog（4.27更新） | 一只大橘</title>
-<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1588034496891">
+<link rel="shortcut icon" href="https://orangepure.github.io/favicon.ico?v=1588044550703">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://orangepure.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="人生第一个blog（4.27更新） | 一只大橘 - Atom Feed" href="https://orangepure.github.io/atom.xml">
@@ -24,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://orangepure.github.io">
-  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1588034496891" alt="">
+  <img class="avatar" src="https://orangepure.github.io/images/avatar.png?v=1588044550703" alt="">
   </a>
   <h1 class="site-title">
     一只大橘
@@ -102,6 +102,7 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
+			<center>  <div id="musicBox"></div></center>
                 <h2 id="时间424">时间：4.24</h2>
 <p>这天<s>突发奇想</s>，想做一个自己的blog<br>
 <s>其实这个仓库我早建了，肥来补坑</s><!-- more --><br>
@@ -130,8 +131,28 @@ Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....b
 ②4.25，发现每次同步，会把之前本地删/改的文件原封不动又传上去了，亟待解决<br>
   4.26，通过作者github的issue，得到了删除output文件夹的解决方法，就不会将删除的文章再传上去（<s>奇怪，明明output里面相关的文件都没了啊</s> 原来在.git文件夹里面）<br>
 ③fog主题的valine评论同步没成功，不知道是我设置错了还是什么</p>
+<p>music ID：<p id='music'>1387105693 </p></p>
 
               </div>
+
+			  <script>
+			  var music = document.getElementById('music')
+if(music != null){//存在
+    var id = music.innerHTML;
+    var code = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=440 height=86 src="//music.163.com/outchain/player?type=2&id='+id +'&auto=1&height=66"></iframe>'
+    console.log('id:' +id);
+    var frame = document.createElement("frame")
+    frame.src='//music.163.com/outchain/player?type=2&id='+id;
+    frame.frameBorder=0;
+    frame.marginHeight=0;
+    frame.marginWidth=0;
+    frame.clientWidth=440;
+    frame.clientHeight=86;          
+    frame.id='Music'
+    var box = document.getElementById('musicBox');
+    musicBox.innerHTML = code;
+}</script>
+
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
@@ -228,6 +249,6 @@ Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....b
       });
 
     </script>
-
+	
   </body>
 </html>
