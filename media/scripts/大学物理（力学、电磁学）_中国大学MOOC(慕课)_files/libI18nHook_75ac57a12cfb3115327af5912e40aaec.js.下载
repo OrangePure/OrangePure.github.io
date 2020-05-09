@@ -1,0 +1,59 @@
+/*
+ * 设置国际化的ajax请求header特定的Accept-Language
+ */
+(function (send) {
+    XMLHttpRequest.prototype.send = function (data) {
+        try {
+            if (window.currentLanguage === 'en') {
+                this.setRequestHeader('Accept-Language', 'en');
+            }
+        } catch (error) {
+            console.log('国际化设置Accept-Language异常' + error);
+        }
+        send.call(this, data);
+    };
+})(XMLHttpRequest.prototype.send);
+
+/*
+ * 设置国际化的页面跳转链接
+ */
+(function () {
+    /*
+    https://www.icourse163.org/course/CC-1002725002
+    https://www.icourse163.org/user/setting/personInfoEdit.htm#/setting
+    https://www.icourse163.org/university/CC#/c
+    https://www.icourse163.org/learn/CC-1002725002?tid=1002811002#/learn/announce
+    https://www.icourse163.org/help/help.htm#/hf?t=0
+    */
+
+    // 是否是国际化的链接
+    function isIntlUrl(pathName) {
+        return pathName.match(/\/en\/mooc/) || pathName.match(/\/mooc\/en/);
+    }
+
+    // 是否在国际化的翻译页面中
+    function isInIntlUrl(pathName) {
+        var courseReg = /^\/course\/\w*-\d*$/, // 课程页
+            userSettingReg = /^\/user\/setting\/personInfoEdit\.htm$/, // 个人设置页
+            universityReg = /^\/\university\/\w*$/, // 学校主页
+            helpReg = /^\/\help\/help\.htm$/, // 帮助页
+            learnReg = /^\/learn\/\w*-\d*$/; // 学习页
+        var regs = [courseReg, userSettingReg, universityReg, helpReg, learnReg];
+        for (var i = 0; i < regs.length; i++) {
+            if (pathName.match(regs[i])) {
+                return true;
+            }
+        }
+    }
+
+    // 监听a标签的点击 暂时不加
+    // document.addEventListener('click', function (e) {
+
+    // });
+    // 如果referrer是国际化的页面，当前url在这几个url内，跳到/en/mooc的链接（这里是一个兜底的跳转判断）
+    if (isIntlUrl(document.referrer) && isInIntlUrl(location.pathname)) {
+        location.pathname = '/en/mooc' + location.pathname; // 这里跳转到/en/mooc的链接
+        return;
+    }
+
+})();
