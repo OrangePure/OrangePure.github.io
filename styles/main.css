@@ -310,7 +310,7 @@ body {
   letter-spacing: 0.05em;
 }
 a {
-  color: #0c8599;
+  color: rgba(0, 0, 0, 0.86);
   text-decoration: none;
   transition: all 0.3s;
 }
