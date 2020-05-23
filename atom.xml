@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://orangepure.github.io</id>
     <title>一只大橘</title>
-    <updated>2020-05-23T02:52:47.331Z</updated>
+    <updated>2020-05-23T02:56:39.763Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://orangepure.github.io"/>
     <link rel="self" href="https://orangepure.github.io/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://orangepure.github.io/images/avatar.png</logo>
     <icon>https://orangepure.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 一只大橘</rights>
+    <entry>
+        <title type="html"><![CDATA[人生第一个blog（5.23更新）]]></title>
+        <id>https://orangepure.github.io/post/my/</id>
+        <link href="https://orangepure.github.io/post/my/">
+        </link>
+        <updated>2020-05-23T10:43:13.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="时间424">时间：4.24</h2>
+<p>这天<s>突发奇想</s>，想做一个自己的blog<br>
+<s>其实这个仓库我早建了，肥来补坑</s><!-- more --><br>
+大概是想把接下来的课设什么的偶尔记录一下？尝试了Github Desktop+模板来弄博客，但是感觉效率太低了<s>不会html</s>，又摸索发现了 <a href="https://gridea.dev/">Gridea</a> 这个宝藏软件（还有hexo）👏</p>
+<p>结果以为CNAME可以自己编，把网站弄崩了😂</p>
+<h2 id="时间425">时间：4.25</h2>
+<p>将新的主题上传了，估计还会再换主题的。目前尚未完成的：<br>
+①Markdown语法的使用<br>
+②评论区<br>
+③流量统计<br>
+④接入百度搜索（？）<s>接不接都没人看，算了</s><br>
+⑤等等等</p>
+<h2 id="时间426">时间：4.26</h2>
+<p>昨晚买了个域名（仅仅1rmb/首年），感觉更像一个blog了呢<br>
+在百度站长那发现移动端可以爬到这个站，PC端好像不行，估计只能移到coding上才行....<br>
+Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....blog能用就行，不整那么多花里胡哨的了。<br>
+*<s>但由于某ling想给我赞赏</s>（或许再研究研究？必做一个打赏功能出来！<br>
+<img src="https://orangepure.github.io/post-images/1587885903080.jpg" alt="" width="200" height="200" loading="lazy"></p>
+<center>↑就这样吧 🐶</center>
+<h2 id="时间427">时间：4.27</h2>
+<p>首先，谢谢valine官方，很及时的回复了我的留言😂，都是我太蠢了....<br>
+<img src="https://orangepure.github.io/post-images/1587993243690.JPG" alt="" width="315" height="123" loading="lazy"><br>
+下次一定要仔细看啊，看了那么多别人的码也该发现不用加&lt;&gt;的，然后官方好像就把之前样例&lt;appID&gt;的&lt;&gt;给去掉了，真的迅速，点赞👍<br>
+<a href="https://sosilent.top/archives/14.html">配置valine</a><br>
+<a href="https://i.immmmm.com/gridea-templates-friends/">配置友链</a></p>
+<h2 id="时间428">时间：4.28</h2>
+<p>加入了音乐外链 <a href="https://sosilent.top/archives/15-1.html">传送门</a><br>
+注：#music 是css样式，应加在.less里面</p>
+<h2 id="时间523">时间：5.23</h2>
+<p>做完C的课设了，接下来是C++的了。<br>
+给valine加入了自定义表情包，b站的表情包<br>
+<a href="https://valine.js.org/emoji.html">valine表情自定义</a><br>
+之前还加入了cnzz站长统计。。。</p>
+<h2 id="qq">Q&amp;Q</h2>
+<p>①4.25，https下的网站发现排版错误，解决：CNAME中加上前缀+清浏览器的缓存（好像就可以了）<br>
+②4.25，发现每次同步，会把之前本地删/改的文件原封不动又传上去了，亟待解决<br>
+  4.26，通过作者github的issue，得到了删除output文件夹的解决方法，就不会将删除的文章再传上去（<s>奇怪，明明output里面相关的文件都没了啊</s> 原来在.git文件夹里面）<br>
+③fog主题的valine评论同步没成功，不知道是我设置错了还是什么</p>
+<p id='music'>1399995864</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一篇物理小课题]]></title>
         <id>https://orangepure.github.io/post/JCrxK3DbJ/</id>
@@ -49,47 +95,6 @@
 <em>这是很久之前写的一小时速成文（雾</em><br>
 <font color=#808080><em>注：图片均来源于网络,如有版权问题请联系删除</em></font></p>
 <p id='music'>1426362296</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[人生第一个blog（4.28更新）]]></title>
-        <id>https://orangepure.github.io/post/my/</id>
-        <link href="https://orangepure.github.io/post/my/">
-        </link>
-        <updated>2020-04-25T10:43:13.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="时间424">时间：4.24</h2>
-<p>这天<s>突发奇想</s>，想做一个自己的blog<br>
-<s>其实这个仓库我早建了，肥来补坑</s><!-- more --><br>
-大概是想把接下来的课设什么的偶尔记录一下？尝试了Github Desktop+模板来弄博客，但是感觉效率太低了<s>不会html</s>，又摸索发现了 <a href="https://gridea.dev/">Gridea</a> 这个宝藏软件（还有hexo）👏</p>
-<p>结果以为CNAME可以自己编，把网站弄崩了😂</p>
-<h2 id="时间425">时间：4.25</h2>
-<p>将新的主题上传了，估计还会再换主题的。目前尚未完成的：<br>
-①Markdown语法的使用<br>
-②评论区<br>
-③流量统计<br>
-④接入百度搜索（？）<s>接不接都没人看，算了</s><br>
-⑤等等等</p>
-<h2 id="时间426">时间：4.26</h2>
-<p>昨晚买了个域名（仅仅1rmb/首年），感觉更像一个blog了呢<br>
-在百度站长那发现移动端可以爬到这个站，PC端好像不行，估计只能移到coding上才行....<br>
-Gridea的自定义还是太难了，要自己添加css，ejs什么的才行....blog能用就行，不整那么多花里胡哨的了。<br>
-*<s>但由于某ling想给我赞赏</s>（或许再研究研究？必做一个打赏功能出来！<br>
-<img src="https://orangepure.github.io/post-images/1587885903080.jpg" alt="" width="200" height="200" loading="lazy"></p>
-<center>↑就这样吧 🐶</center>
-<h2 id="时间427">时间：4.27</h2>
-<p>首先，谢谢valine官方，很及时的回复了我的留言😂，都是我太蠢了....<br>
-<img src="https://orangepure.github.io/post-images/1587993243690.JPG" alt="" width="315" height="123" loading="lazy"><br>
-下次一定要仔细看啊，看了那么多别人的码也该发现不用加&lt;&gt;的，然后官方好像就把之前样例&lt;appID&gt;的&lt;&gt;给去掉了，真的迅速，点赞👍<br>
-<a href="https://sosilent.top/archives/14.html">配置valine</a><br>
-<a href="https://i.immmmm.com/gridea-templates-friends/">配置友链</a></p>
-<h2 id="时间428">时间：4.28</h2>
-<p>加入了音乐外链 <a href="https://sosilent.top/archives/15-1.html">传送门</a><br>
-注：#music 是css样式，应加在.less里面</p>
-<h2 id="qq">Q&amp;Q</h2>
-<p>①4.25，https下的网站发现排版错误，解决：CNAME中加上前缀+清浏览器的缓存（好像就可以了）<br>
-②4.25，发现每次同步，会把之前本地删/改的文件原封不动又传上去了，亟待解决<br>
-  4.26，通过作者github的issue，得到了删除output文件夹的解决方法，就不会将删除的文章再传上去（<s>奇怪，明明output里面相关的文件都没了啊</s> 原来在.git文件夹里面）<br>
-③fog主题的valine评论同步没成功，不知道是我设置错了还是什么</p>
-<p id='music'>1399995864</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea（这是例文）]]></title>
