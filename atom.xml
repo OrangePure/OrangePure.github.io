@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://orangepure.github.io</id>
     <title>一只大橘</title>
-    <updated>2020-08-03T07:17:28.668Z</updated>
+    <updated>2020-08-12T07:36:09.750Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://orangepure.github.io"/>
     <link rel="self" href="https://orangepure.github.io/atom.xml"/>
@@ -10,6 +10,109 @@
     <logo>https://orangepure.github.io/images/avatar.png</logo>
     <icon>https://orangepure.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 一只大橘</rights>
+    <entry>
+        <title type="html"><![CDATA[B - Ignatius and the Princess IV]]></title>
+        <id>https://orangepure.github.io/post/hIScuXHGH/</id>
+        <link href="https://orangepure.github.io/post/hIScuXHGH/">
+        </link>
+        <updated>2020-08-04T06:12:11.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="problem">Problem</h3>
+<p>&quot;OK, you are not too bad, em... But you can never pass the next test.&quot; feng5166 says.<!-- more --><br>
+&quot;I will tell you an odd number N, and then N integers. There will be a special integer among them, you have to tell me which integer is the special one after I tell you all the integers.&quot; feng5166 says.<br>
+&quot;But what is the characteristic of the special integer?&quot; Ignatius asks.<br>
+&quot;The integer will appear at least (N+1)/2 times. If you can't find the right integer, I will kill the Princess, and you will be my dinner, too. Hahahaha.....&quot; feng5166 says.<br>
+Can you find the special integer for Ignatius?</p>
+<h3 id="vj传送门"><a href="https://vjudge.net/problem/HDU-1029">VJ传送门</a></h3>
+<h3 id="input">Input</h3>
+<p>The input contains several test cases. Each test case contains two lines. The first line consists of an odd integer N(1&lt;=N&lt;=999999) which indicate the number of the integers feng5166 will tell our hero. The second line contains the N integers. The input is terminated by the end of file.</p>
+<h3 id="output">Output</h3>
+<p>For each test case, you have to output only one line which contains the special number you have found.</p>
+<h3 id="sample-input">Sample Input</h3>
+<p>5<br>
+1 3 2 3 3<br>
+11<br>
+1 1 1 1 1 5 5 5 5 5 5<br>
+7<br>
+1 1 1 1 1 1 1</p>
+<h3 id="sample-output">Sample Output</h3>
+<p>3<br>
+5<br>
+1</p>
+<h3 id="题解">题解：</h3>
+<p>壹：直接开数组模拟计数，看题目N的上界99999，随便开了个1000000的数组（理想情况下50000足矣），居然过了！<br>
+贰：设time，若输入的数与当前数（flag）不同time--，相同则time++；time==0时，更换flag，继续。<br>
+叁：sort排序，直接输出第（n+1）/2个</p>
+<h3 id="ac代码">AC代码：</h3>
+<p>壹：</p>
+<pre><code class="language-C++">#include&lt;iostream&gt;
+#include&lt;stdio.h&gt; 
+using namespace std;
+int main(){
+	int s,m,max,ans,d;
+	while(cin&gt;&gt;s){
+		int a[1000000]={0};d=0;
+		for(int i=1;i&lt;=s;i++){
+			scanf(&quot;%d&quot;,&amp;m);
+			a[m]++;
+			if(m&gt;d) //d记录最大出现的数字，减少后面的遍历（其实后面遍历可以省略，在这里直接比较）
+			d=m;
+		}
+		max=a[0];ans=0;
+		for(int i=1;i&lt;=d;i++){
+			if(a[i]&gt;max){
+			max=a[i];
+			ans=i;}
+		}
+		cout&lt;&lt;ans&lt;&lt;endl;
+	}
+}
+</code></pre>
+<p>贰：</p>
+<pre><code class="language-C++">#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int n;
+    int m;
+    int c;
+    while(cin&gt;&gt;n)
+    {
+        int time=0;
+        while(n--)
+        {
+            cin&gt;&gt;m;
+            if(time&lt;=0)
+                c=m;
+            m==c?++time:--time;
+        }
+        cout&lt;&lt;c&lt;&lt;endl;
+    }
+} </code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A - Max Sum Plus Plus]]></title>
+        <id>https://orangepure.github.io/post/XERFIPvhG/</id>
+        <link href="https://orangepure.github.io/post/XERFIPvhG/">
+        </link>
+        <updated>2020-08-03T08:26:40.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>Now I think you have got an AC in Ignatius.L's &quot;Max Sum&quot; problem. To be a brave ACMer, we always challenge ourselves to more difficult problems. Now you are faced with a more difficult problem.Given a consecutive number sequence S1, S2, S3, S4 ... Sx, ... Sn (1 ≤ x ≤ n ≤ 1,000,000, -32768 ≤ Sx ≤ 32767). We define a function sum(i, j) = Si + ... + Sj (1 ≤ i ≤ j ≤ n).Now given an integer m (m &gt; 0), your task is to find m pairs of i and j which make sum(i1, j1) + sum(i2, j2) + sum(i3, j3) + ... + sum(im, jm) maximal (ix ≤ iy ≤ jx or ix ≤ jy ≤ jx is not allowed).But I`m lazy, I don't want to write a special-judge module, so you don't have to output m pairs of i and j, just output the maximal summation of sum(ix, jx)(1 ≤ x ≤ m) instead. <sup>_</sup></p>
+<h3 id="input">Input</h3>
+<p>Each test case will begin with two integers m and n, followed by n integers S1, S2, S3 ... Sn.Process to the end of file.</p>
+<h3 id="output">Output</h3>
+<p>Output the maximal summation described above in one line.</p>
+<h3 id="sample-input">Sample Input</h3>
+<p>1 3 1 2 3<br>
+2 6 -1 4 -2 3 -2 3</p>
+<h3 id="sample-output">Sample Output</h3>
+<p>6<br>
+8</p>
+<h3 id="hint">Hint</h3>
+<p>Huge input, scanf and dynamic programming is recommended.</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20暑VJ训练—最少拦截系统]]></title>
         <id>https://orangepure.github.io/post/EWOXcr714/</id>
